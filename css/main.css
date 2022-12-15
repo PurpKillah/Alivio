@@ -2,6 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    color: #424242;
 }
 
 /* Utility */
@@ -13,4 +14,87 @@ body {
 .visualyHidden {
     visibility: hidden;
     opacity: 0;
+}
+
+/* Grid */
+
+
+.container {
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    /* контент по центру */
+}
+
+.header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.headerRow {
+    display: flex;
+    align-items: center;
+}
+
+.headerNav {
+    margin-left: 172px;
+}
+
+.headerNav ul {
+    display: flex;
+    font-weight: 500;
+    color: #292929;
+}
+
+.headerNav li {
+    margin-right: 70px;
+}
+
+.headerNav li:last-child {
+    margin-right: 0;
+}
+
+.headerNav a {
+    transition: ease 0.3s;
+}
+
+.headerNav a:hover {
+    color: #01996D;
+}
+
+.headerLogin {
+    margin-left: auto;
+}
+
+.headerLogin a {
+    transition: ease 0.3s;
+}
+
+.headerLogin a:hover {
+    color: #01996D;
+}
+
+.btn,
+a.btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #01996D;
+    border-radius: 4px;
+    color: #fff !important;
+}
+
+.btn:hover,
+a.btn:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.headerLogin *+* {
+    margin-left: 35px;
 }
